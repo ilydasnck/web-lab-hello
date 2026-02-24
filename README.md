@@ -33,3 +33,4 @@ Tarayicida http :// localhost :5173 adresini ac.
 ## Ekran Goruntusu
 
 ![alt text](image.png)
+![alt text](image-1.png)
