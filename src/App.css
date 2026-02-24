@@ -1,11 +1,9 @@
-/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== GENEL ===== */
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
@@ -17,7 +15,7 @@ body {
   width: 100%;
 }
 
-/* ===== SKIP LINK ===== */
+/* SKIP LINK */
 .skip-link {
   position: absolute;
   top: -50px;
@@ -25,14 +23,19 @@ body {
   background: #000;
   color: #fff;
   padding: 10px;
-  z-index: 100;
 }
 
 .skip-link:focus {
   top: 10px;
 }
 
-/* ===== HEADER (FULL WIDTH) ===== */
+/* FOCUS (ACCESSIBILITY) */
+:focus {
+  outline: 3px solid #4ca1af;
+  outline-offset: 2px;
+}
+
+/* HEADER */
 header {
   width: 100%;
   background: linear-gradient(135deg, #2c3e50, #4ca1af);
@@ -41,7 +44,6 @@ header {
   padding: 25px 15px;
 }
 
-/* NAV */
 nav ul {
   list-style: none;
   display: flex;
@@ -51,29 +53,18 @@ nav ul {
   margin-top: 10px;
 }
 
-nav li {
-  display: inline;
-}
-
 nav a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
-  transition: 0.3s;
 }
 
-nav a:hover {
-  opacity: 0.7;
-}
-
-/* ===== MAIN (ORTALI) ===== */
+/* MAIN */
 main {
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* ===== SECTION ===== */
 section {
   margin-bottom: 50px;
 }
@@ -83,27 +74,16 @@ section h2 {
   color: #2c3e50;
 }
 
-/* ===== HAKKIMDA ===== */
+/* ABOUT */
 #hakkimda {
   text-align: center;
-}
-
-figure {
-  margin-bottom: 15px;
 }
 
 figure img {
   width: 150px;
   height: 150px;
-  object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #4ca1af;
-}
-
-figcaption {
-  margin-top: 8px;
-  font-size: 14px;
-  color: #777;
+  object-fit: cover;
 }
 
 #hakkimda ul {
@@ -119,11 +99,9 @@ figcaption {
   color: white;
   padding: 6px 12px;
   border-radius: 20px;
-  list-style: none;
-  font-size: 14px;
 }
 
-/* ===== PROJELER ===== */
+/* PROJECTS */
 #projeler {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -133,61 +111,37 @@ figcaption {
 article {
   background: white;
   padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-article:hover {
-  transform: translateY(-5px);
+  border-radius: 10px;
 }
 
 article img {
   width: 100%;
-  margin-top: 10px;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
-/* ===== FORM ===== */
+/* FORM */
 form {
   max-width: 500px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
-}
-
-label {
-  margin-top: 10px;
-  font-weight: 500;
 }
 
 input, textarea {
   padding: 10px;
   margin-top: 5px;
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  transition: 0.3s;
-}
-
-input:focus, textarea:focus {
-  border-color: #4ca1af;
-  outline: none;
 }
 
 button {
   margin-top: 15px;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
+  padding: 10px;
   background: #4ca1af;
   color: white;
-  font-size: 16px;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #2c3e50;
 }
 
 .error {
@@ -195,7 +149,7 @@ button:hover {
   font-size: 13px;
 }
 
-/* ===== FOOTER (FULL WIDTH) ===== */
+/* FOOTER */
 footer {
   width: 100%;
   background: #2c3e50;
@@ -204,42 +158,14 @@ footer {
   padding: 20px;
 }
 
-footer a {
-  color: #4ca1af;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-/* ===== RESPONSIVE ===== */
-
-/* Tablet */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 24px;
-  }
-
   nav ul {
     flex-direction: column;
-    gap: 10px;
-  }
-
-  main {
-    padding: 15px;
   }
 
   figure img {
     width: 120px;
     height: 120px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-
-  button {
-    font-size: 14px;
   }
 }

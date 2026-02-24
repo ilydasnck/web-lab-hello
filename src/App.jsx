@@ -133,7 +133,11 @@ function App() {
               value={formData.name}
               onChange={handleChange}
             />
-            {errors.name && <span className="error">{errors.name}</span>}
+            {errors.name && (
+              <small className="error" role="alert">
+                {errors.name}
+              </small>
+            )}
 
             {/* EMAIL */}
             <label htmlFor="email">Email</label>
@@ -145,7 +149,11 @@ function App() {
               value={formData.email}
               onChange={handleChange}
             />
-            {errors.email && <span className="error">{errors.email}</span>}
+            {errors.email && (
+              <small className="error" role="alert">
+                {errors.email}
+              </small>
+            )}
 
             {/* MESSAGE */}
             <label htmlFor="message">Mesaj</label>
@@ -157,7 +165,11 @@ function App() {
               value={formData.message}
               onChange={handleChange}
             />
-            {errors.message && <span className="error">{errors.message}</span>}
+            {errors.message && (
+              <small className="error" role="alert">
+                {errors.message}
+              </small>
+            )}
 
             <button type="submit">Gönder</button>
 
