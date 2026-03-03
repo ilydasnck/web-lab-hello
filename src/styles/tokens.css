@@ -1,24 +1,24 @@
 :root {
   /* --- Renk Paleti (Mor Tonlar, Okunaklı) --- */
-  --color-primary: #6D28D9;   /* Mor */
-  --color-secondary: #9333EA; /* Mor (ikinci ton) */
-  --color-accent: #DB2777;    /* Pembe vurgu */
-  --color-bg: #FFFFFF;        /* Genel (açık) zemin */
-  --color-text: #111827;      /* Koyu metin */
-  --color-muted: #4B5563;
-  --color-surface: #FFFFFF;   /* Kart / içerik yüzeyi */
-  --color-border: #E5E7EB;
-  --color-error: #DC2626;
-  --color-success: #16A34A;
+  --color-primary: #6d28d9; /* Mor */
+  --color-secondary: #9333ea; /* Mor (ikinci ton) */
+  --color-accent: #db2777; /* Pembe vurgu */
+  --color-bg: #ffffff; /* Genel (açık) zemin */
+  --color-text: #111827; /* Koyu metin */
+  --color-muted: #4b5563;
+  --color-surface: #ffffff; /* Kart / içerik yüzeyi */
+  --color-border: #e5e7eb;
+  --color-error: #dc2626;
+  --color-success: #16a34a;
 
   /* --- Spacing (Boşluk) Skalası --- */
   --space-xs: 0.25rem; /* 4px */
-  --space-sm: 0.5rem;  /* 8px */
-  --space-md: 1rem;    /* 16px */
-  --space-lg: 1.5rem;  /* 24px */
-  --space-xl: 2rem;    /* 32px */
-  --space-2xl: 3rem;   /* 48px */
-  --space-3xl: 4rem;   /* 64px */
+  --space-sm: 0.5rem; /* 8px */
+  --space-md: 1rem; /* 16px */
+  --space-lg: 1.5rem; /* 24px */
+  --space-xl: 2rem; /* 32px */
+  --space-2xl: 3rem; /* 48px */
+  --space-3xl: 4rem; /* 64px */
 
   /* --- Border Radius --- */
   --radius-sm: 4px;
@@ -28,7 +28,7 @@
 
   /* --- Font Aileleri --- */
   --font-sans: system-ui, -apple-system, sans-serif;
-  --font-mono: 'Fira Code', 'Consolas', monospace;
+  --font-mono: "Fira Code", "Consolas", monospace;
 
   /* --- Font Boyutları (Fluid) --- */
   --text-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.9rem);
@@ -40,15 +40,32 @@
 
   /* --- Gölge --- */
   --shadow-sm: 0 1px 2px rgba(17, 24, 39, 0.06);
-  --shadow-md: 0 8px 18px rgba(17, 24, 39, 0.10);
+  --shadow-md: 0 8px 18px rgba(17, 24, 39, 0.1);
   --shadow-lg: 0 22px 50px rgba(17, 24, 39, 0.14);
 
   /* --- Gradient'ler --- */
-  --gradient-bg: radial-gradient(circle at 10% 10%, rgba(147, 51, 234, 0.22), transparent 55%),
-    radial-gradient(circle at 90% 25%, rgba(219, 39, 119, 0.18), transparent 55%),
-    linear-gradient(180deg, #FFFFFF, #F7F2FF);
-  --gradient-card: linear-gradient(135deg, rgba(147, 51, 234, 0.10), rgba(219, 39, 119, 0.06));
-  --gradient-header: linear-gradient(90deg, rgba(147, 51, 234, 0.12), rgba(219, 39, 119, 0.10));
+  --gradient-bg:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(147, 51, 234, 0.22),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 90% 25%,
+      rgba(219, 39, 119, 0.18),
+      transparent 55%
+    ),
+    linear-gradient(180deg, #ffffff, #f7f2ff);
+  --gradient-card: linear-gradient(
+    135deg,
+    rgba(147, 51, 234, 0.1),
+    rgba(219, 39, 119, 0.06)
+  );
+  --gradient-header: linear-gradient(
+    90deg,
+    rgba(147, 51, 234, 0.12),
+    rgba(219, 39, 119, 0.1)
+  );
 
   /* --- Geçiş --- */
   --transition-fast: 150ms ease;
